@@ -1,0 +1,9 @@
+p{
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgba(170, 126, 185, 0.692);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
