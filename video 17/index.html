@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 17</title>
+    <style>
+        /*CSS Selector*/
+
+        /** is universal selector*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            background-color: red;
+            color: purple;
+        }
+        .red{
+            background-color: blueviolet;
+            color: yellow;
+        }
+        #green{
+            color: whitesmoke;
+            background-color: green;
+        }
+        /*child selector*/
+        div > p{
+            background-color: brown;
+            color: blue;
+        }
+        /*pseudo selector*/
+        a:visited{
+            color: yellow;
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: yellow;
+            cursor: wait;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        CSS Selectors MasterClass
+    </h1>
+    <div>
+        I am a DIV
+    </div>
+    <div class="red">
+        I am a class named red.
+        <p>I am a para inside div</p>
+    </div>
+    <div id="green">
+        I am an id names green.
+    </div>
+    <a href="https://www.google.com">Go to Google</a>
+    <br><a href="https://www.facebook.com">Go to facebook</a>
+</body>
+</html>
