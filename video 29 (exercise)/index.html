@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .card{
+            height: 600px;
+            background-color: rgba(0, 0, 0, 0.571);
+            width: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            
+        }
+         .inside{
+            height: 500px;
+            width: 300px;
+            background-color: whitesmoke;
+            border-radius: 20px;
+            display:grid;
+        }
+        .top img{
+            height: 20vh;
+            width: 86%;
+            object-position: center;
+            object-fit: cover;
+            image-resolution: 1200px;
+            filter: grayscale(0.32);
+            border-radius: 20px;
+            margin: 20px;
+        }
+        .box2{
+            margin: 10px 20px 0 20px;
+            height: 38.5vw;
+            border-radius: 20px;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            gap: 15vw;
+        }
+        .inside h3{
+            top: 10%;
+            left: 0%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Card.png is a file contains a card image. Create a card exactly looks like same.
+    </h1>
+    <div class="card">
+        <div class="inside">
+            <div class="top">
+                <img src="https://images.pexels.com/photos/1758144/pexels-photo-1758144.jpeg?auto=compress&cs=tinysrgb&w=600" alt="#">
+            </div>
+            <div class="box2">
+                <h4>Content</h4>
+                <h4>Share</h4>
+            </div>
+            <h3>Sagar Malasi</h3>
+        </div>
+    </div>
+</body>
+</html>
