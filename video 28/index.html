@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 27</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box1 {
+        background-color: aqua;
+        /* position: sticky; */
+        z-index: 9;
+        left: 144px;
+        top: 8px;
+      }
+      .box2 {
+        background-color: rebeccapurple;
+        /* position: relative; */
+        top: -30px;
+        z-index: 1;
+      }
+      .box3 {
+        background-color: red;
+        /* position: sticky; */
+      }
+      .box4 {
+        background-color: paleturquoise;
+        position: sticky;
+      }
+      .box {
+        height: 133px;
+        width: 80vw;
+        padding: 3px;
+        margin: 3px;
+        border: 2px solid black;
+        position: sticky;
+      }
+      .parent {
+        position: absolute;
+        border: 2px solid black;
+        height: 6500px;
+        width: 90%;
+        text-align: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Position Property</h1>
+    <div class="parent">
+      <div class="box1 box">I am Box 1</div>
+      <div class="box2 box">I am Box 2</div>
+      <div class="box3 box">I am Box 3</div>
+      <div class="box4 box">I am Box 4</div>
+    </div>
+  </body>
+</html>
