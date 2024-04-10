@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 21</title>
+    <style>
+        .yellow{
+            color: yellow;
+        }
+        .cred{
+            color: red;
+        }
+        .cpurple{
+            color: purple;
+            background-color: goldenrod important;
+        }
+        /*This is an example of attribute selector*/
+        [data-x=a]{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div data-x="a" class=" cpurple yellow cred ">
+        <h1>
+            CSS Specificity
+        </h1>
+        
+    </div>
+    <div class="a">
+        <h3>
+            Specificity calculation
+        </h3>
+        <p>54
+            To calculate Specificity, assign a value to each part of the selector.
+        </p>
+        <ol>
+            <li>
+                Universal Selector: 0
+            </li>
+            <li>
+                Element Selector and pseudo-elements: 1
+            </li>
+            <li>
+                Class Selectors, attribute selectors, and pseudo-classes: 10
+            </li>
+            <li>
+                ID Selectors: 100
+            </li>
+            <li>
+                Inline CSS: 1000
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
