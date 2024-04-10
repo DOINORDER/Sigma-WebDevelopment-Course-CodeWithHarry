@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 30</title>
+    <style>
+        :root{
+            --color: blue;
+            --seccolor: rgb(216, 147, 219);
+            --tec: rgb(13, 255, 0);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            background-color: var(--seccolor);
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            list-style: none;
+            padding: 34px;
+        }
+        ul li:first-child{
+            --color: rgb(241, 181, 17);
+            background-color: var(--color, blue);
+        }
+        .cont{
+            border: 2px solid var(--tec);
+            background-color: var(--color);
+            margin: 20px;
+            padding: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>
+        CSS Variables
+    </h1>
+<div class="nav">
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+    <div class="cont">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. A nobis nesciunt recusandae dolorum! Adipisci, quo exercitationem facere quis sit dignissimos quas voluptas, itaque quisquam, ipsa nisi numquam a cum nesciunt harum tenetur maiores ut ea accusantium laborum eum quod explicabo! Magni saepe labore repellat commodi!
+        </p>
+    </div>
+</div>
+</body>
+</html>
