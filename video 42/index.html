@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 42</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            /* transform: rotate(40deg); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: rotatez(90deg);
+            transform: scale(1.6);
+            /* transform: skew(60deg); */
+            transform: translate(100%);
+            background-color: lavender;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            border: 2px solid magenta;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Transform</h1>
+
+    <div class="container">
+        <div class="box">1</div>
+    </div>
+</body>
+</html>
