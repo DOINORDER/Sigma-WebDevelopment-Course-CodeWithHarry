@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise 8</title>
+    <style>
+        .container{
+            background-color: blue;
+            width: 100%;
+            height: 80vh;
+            position: relative;
+        }
+        .box{
+            background-color: pink;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            animation: animatex 4s linear infinite alternate, animatey 1s ease-out infinite alternate;
+        }
+        @keyframes animatex {
+            from{
+left: 0;
+            }
+            to{
+left: 100%;
+            }
+        }
+        @keyframes animatey {
+            from{
+                bottom: 0;
+            }
+            to{
+                bottom: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Bounce Animation
+    </h1>
+
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
