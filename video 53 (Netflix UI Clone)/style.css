@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: black;
+}
+.main {
+  background: url(assets/img/Netflix\ Background.jpg) center no-repeat fixed;
+  background-size: max(1200px, 100vw);
+  height: 100vh;
+  position: relative;
+}
+.main .box {
+  height: 100vh;
+  width: 100%;
+  opacity: 0.69;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 80vw;
+  margin: auto;
+  height: 60px;
+}
+nav img {
+  color: red;
+  width: 120px;
+  position: relative;
+  z-index: 10;
+}
+nav button {
+  position: relative;
+  z-index: 10;
+}
+
+.hero {
+  height: calc(100% - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: wheat;
+  position: relative;
+  gap: 23px;
+  padding: 0 20px;
+}
+.hero h3 {
+  font-weight: 600;
+  font-size: 45px;
+  text-align: center;
+}
+.hero span {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+.seperation {
+  height: 10px;
+  background-color: rgb(60, 56, 56);
+}
+.btn {
+  padding: 3px 8px;
+  font-weight: bold;
+  background-color: rgba(12, 12, 12, 0.7);
+  border: 1px solid rgba(179, 175, 175, 0.667);
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  font-weight: 400;
+}
+.btn-red {
+  background-color: red;
+  color: white;
+  border-radius: 6px;
+  padding: 15px 25px;
+  font-size: 25px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(179, 175, 175, 0.3);
+}
+.btn-red-sm {
+  background-color: red;
+  color: white;
+  border: none;
+}
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.main input {
+    color: white;
+  border-radius: 6px;
+  padding: 15px 100px 15px 14px;
+  font-size: 25px;
+  font-weight: 500;
+  background: rgba(12, 12, 12, 0.7);
+  border: 1px solid rgba(179, 175, 175, 0.667);
+}
+.first{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    color: white;
+    max-width: 50vw;
+}
