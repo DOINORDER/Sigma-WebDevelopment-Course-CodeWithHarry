@@ -126,9 +126,12 @@ nav button {
 }
 .secImg video{
     position: absolute;
-    top:51px;
+    top: 51px;
     right: 0;
-    
+}
+section.first > div{
+    display: flex;
+    flex-direction: column;
 }
 .first h3 {
     font-weight: 600;
