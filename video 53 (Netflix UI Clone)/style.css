@@ -46,7 +46,7 @@ nav button {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: wheat;
+  color: white;
   position: relative;
   gap: 23px;
   padding: 0 20px;
@@ -123,14 +123,12 @@ nav button {
     width: 30vw;
     position: relative;
     z-index: 10;
-    
 }
 .secImg video{
     position: absolute;
-    top: 25px;
-    object-fit: cover;
-    right: -20px;
-    transform: scale(0.7);
+    top:51px;
+    right: 0;
+    
 }
 .first h3 {
     font-weight: 600;
