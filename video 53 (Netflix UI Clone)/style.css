@@ -111,5 +111,35 @@ nav button {
     justify-content: center;
     margin: auto;
     color: white;
-    max-width: 50vw;
+    max-width: 70vw;
+    justify-content: center;
+    align-items: center;
 }
+.secImg{
+    position: relative;
+}
+
+.secImg img{
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+    
+}
+.secImg video{
+    position: absolute;
+    top: 25px;
+    object-fit: cover;
+    right: -20px;
+    transform: scale(0.7);
+}
+.first h3 {
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+  }
+  .first span {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: left;
+    padding-right: 40px;
+  }
