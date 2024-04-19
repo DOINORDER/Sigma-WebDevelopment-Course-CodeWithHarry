@@ -10,7 +10,6 @@ if (age == 18){
 else{
     console.log('You cannot drive')
 }
-
 let grace = 2
 if ((age+grace)>18){
     console.log('You can drive')
