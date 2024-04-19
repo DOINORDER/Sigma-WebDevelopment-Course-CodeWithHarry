@@ -35,3 +35,5 @@ console.log(friend.slice(1))
 let p = "Rahul"
 let q = "Priya"
 console.log(p.concat(a, "rahul", "Priya", "Sneha"))
+
+//String is immutable i.e. old stirng will not changed even if you create another string
