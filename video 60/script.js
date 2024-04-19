@@ -40,3 +40,18 @@ console.log(q.indexOf('codewithharry'))
 console.log(q.trim(1, 2))
 
 //String is immutable i.e. old stirng will not changed even if you create another string
+
+let sagar = 'SagarMalasi' //Sagar is a String here
+console.log(sagar)
+
+console.log(sagar[0]);
+console.log(sagar[1]);
+console.log(sagar[2]);
+console.log(sagar[3]);
+console.log(sagar[4]);
+console.log(sagar[5]);
+console.log(sagar[6]);
+console.log(sagar[7]);
+console.log(sagar[8]);
+console.log(sagar[9]);
+console.log(sagar[10]);
