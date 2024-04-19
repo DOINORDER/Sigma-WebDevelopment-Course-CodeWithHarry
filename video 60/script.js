@@ -23,3 +23,8 @@ let friend  = 'Rohan'
 let name = 'Sagar'
 console.log("his name is " + name + " and his friends name is " + friend)
 console.log(`his name is ${name} and his friends name is ${friend}`)
+
+console.log(friend.toUpperCase())
+console.log(name.toLowerCase())
+
+console.log(name.slice(1, 5))
