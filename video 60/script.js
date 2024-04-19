@@ -30,3 +30,4 @@ console.log(name.toLowerCase())
 console.log(name.slice(1, 5))
 
 console.log(friend.replace("Ro", "78")) ///replaces "Ro" from Rohan to 78han
+console.log(friend.slice(1))
