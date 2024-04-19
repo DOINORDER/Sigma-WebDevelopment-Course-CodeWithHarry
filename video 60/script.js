@@ -56,4 +56,6 @@ console.log(sagar[8]);
 console.log(sagar[9]);
 console.log(sagar[10]);
 
+
+console.log(myFunction)
 //end of vidoe
