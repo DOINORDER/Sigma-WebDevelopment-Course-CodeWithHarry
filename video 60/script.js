@@ -37,5 +37,6 @@ let q = "Priya"
 console.log(p.concat(a, "rahul", "Priya", "Sneha"))
 
 console.log(q.indexOf('codewithharry'))
+console.log(q.trim(1, 2))
 
 //String is immutable i.e. old stirng will not changed even if you create another string
