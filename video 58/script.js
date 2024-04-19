@@ -10,6 +10,11 @@ function nice(name) {
     console.log('hey are you' + name, '?')
 }
 
-let a  = 20
-let b = 80
-console.log(a - b)
+// let a  = 20
+// let b = 80
+// console.log(a - b)
+
+let d = 20
+let c = 12
+let myFunction = (d, c) => {d * c};
+return myFunction
