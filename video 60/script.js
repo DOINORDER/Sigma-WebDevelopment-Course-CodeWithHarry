@@ -58,6 +58,4 @@ console.log(sagar[10]);
 
 
 console.log(myFunction)
-
-console.dir(Object)
 //end of vidoe
