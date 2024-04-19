@@ -1,0 +1,1 @@
+// Create a faulty calculator using html css and js for all the funtionalities and logics
