@@ -33,4 +33,12 @@ let a1 = [1, 2, 3, 4, 5];
 let a2 = [9, 8, 7, 6, 0];
 
 c = arr.concat(a1, a2)
-console.log(c)
+console.log(c) //This will bind the two arrays together without changing them
+
+//splice method
+
+let num = [1,2,3,4,5]
+console.log(num.splice(2,4)) 
+num.splice(2,4, 54, 67)
+
+console.log(num) // 3 and 5 will be removed as they are at the index position of 2 and 4
