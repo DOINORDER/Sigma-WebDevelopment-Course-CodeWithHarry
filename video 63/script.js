@@ -86,7 +86,7 @@ let mapArr = [1,3,5,7,11];
 //     newArr.push(element**2) //This will fill up the newArr by converting mapArr into their respective squares
 // }
 
-let newArr = arr.map((e)=>{
+let newArr = arr.map((e, index, array)=>{
     return e**2
 })
 console.log(newArr)
