@@ -80,10 +80,13 @@ for (const value of a) { //iterator is value
 // map()
 
 let mapArr = [1,3,5,7,11];
-let newArr = []
-for (let index = 0; index < mapArr.length; index++) {
-    const element = mapArr[index];
-    newArr.push(element**2) //This will fill up the newArr by converting mapArr into their respective squares
-}
+// let newArr = []
+// for (let index = 0; index < mapArr.length; index++) {
+//     const element = mapArr[index];
+//     newArr.push(element**2) //This will fill up the newArr by converting mapArr into their respective squares
+// }
 
+let newArr = arr.map((e)=>{
+    return e**2
+})
 console.log(newArr)
