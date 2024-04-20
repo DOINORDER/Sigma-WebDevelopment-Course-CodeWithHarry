@@ -90,3 +90,12 @@ let newArr = arr.map((e, index, array)=>{
     return e**2
 })
 console.log(newArr)
+
+const greaterThanSeven = (e) => {
+if(e>7){
+    return true
+}
+return false
+}
+
+console.log(newArr.filter(greaterThanSeven))
