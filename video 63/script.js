@@ -65,9 +65,18 @@ let obj = {
     b:2,
     c:3
 }
+
 for (const key in obj) {
     if (Object.hasOwnProperty.call(obj, key)) {
         const element = obj[key];
         console.log(element)
     }
 }
+
+for (const value of a) { //iterator is value
+    console.log(a)
+}
+
+// map()
+
+let mapArr = [1,3,5,7,11];
