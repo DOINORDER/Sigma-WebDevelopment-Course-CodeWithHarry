@@ -26,7 +26,11 @@ console.log(typeof arr);
 console.log(arr.toString());
 console.log(arr.join(" and ")); //Important method
 console.log(arr.pop(3));
-console.log(arr.push("Rocket Science"));
+arr.push("Rocket Science");
+console.log(arr)
 
 let a1 = [1, 2, 3, 4, 5];
 let a2 = [9, 8, 7, 6, 0];
+
+c = arr.concat(a1, a2)
+console.log(c)
