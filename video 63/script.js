@@ -99,6 +99,3 @@ return false
 }
 
 console.log(newArr.filter(greaterThanSeven))
-
-
-shgbcin
