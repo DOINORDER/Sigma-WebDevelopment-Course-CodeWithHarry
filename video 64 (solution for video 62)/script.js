@@ -35,4 +35,4 @@ if (rand < 0.33) {
   third = "Hub";
 }
 
-console.log(`${first} ${second} ${third}`)
+console.log(`${first} ${second} ${third}`);
