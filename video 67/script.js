@@ -23,4 +23,5 @@ document.body.children[1].rows
 
 tab.style.backgroundColor = "cadetBlue"
 tab.style.textAlign = "center"
-tab.style.padding = "20px"
+tab.style.padding = "15px"
+tab.style.width = "100%"
