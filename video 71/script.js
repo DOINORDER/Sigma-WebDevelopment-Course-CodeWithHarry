@@ -6,3 +6,5 @@ console.log(a)
 
 
 div.innerHTML = "I have been inserted by <b>Sagar Malasi | Doinorder</b>"
+div.setAttribute("class", "created")
+document.querySelector(".container").append(div)
