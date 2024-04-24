@@ -1,4 +1,4 @@
-console.log("Sagar Malasi")
+console.log("Sagar Malasi");
 
 // let boxes = document.getElementsByClassName("box")
 // console.log(boxes)
@@ -9,6 +9,6 @@ console.log("Sagar Malasi")
 
 // document.querySelector(".box").style.backgroundColor = "green"
 
-document.querySelectorAll(".box").forEach(e =>{
-    e.style.backgroundColor = "green"
-})
+document.querySelectorAll(".box").forEach((e) => {
+  e.style.backgroundColor = "green";
+});
