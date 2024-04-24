@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lecture 67 | DOM - Children, Parents & Sibling Nodes</title>
     <style>
-        .box{
-            height: 45px;
-            width: 56px;
-            border: 2px solid black;
-            margin: 5px;
-            padding: 5px;
-        }
+      .container {
+        background: blueviolet;
+        display: grid;
+        grid-template-columns: max-content;
+        align-items: center;
+        justify-content: center;
+      }
+      .box {
+        height: 45px;
+        width: 56px;
+        border: 2px solid black;
+        margin: 5px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+      <div class="box">Hello</div>
+      <div class="box">Hello</div>
+      <div class="box">Hello</div>
+      <div class="box">Hello</div>
+      <div class="box">Hello</div>
     </div>
-</body>
+  </body>
+  <script src="script.js"></script>
 </html>
