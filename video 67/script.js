@@ -17,3 +17,10 @@ cont.lastElementChild.style.backgroundColor = "yellow";
 document.body.firstElementChild;
 document.body.firstElementChild.childNodes;
 document.body.firstElementChild.children;
+
+let tab = document.body.children[1]
+document.body.children[1].rows
+
+tab.style.backgroundColor = "cadetBlue"
+tab.style.textAlign = "center"
+tab.style.padding = "20px"
