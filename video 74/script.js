@@ -6,6 +6,6 @@ alert("Iwasclicked")
 document.querySelector(".box").innerText = "yayyyyyyyyyyyyyyy, you were clicked!!!!"
 })
 
-button.addEventListener("contextmenu", ()=>{
+button.addEventListener("contextmenu", () => {
     alert("Right click please")
 })
