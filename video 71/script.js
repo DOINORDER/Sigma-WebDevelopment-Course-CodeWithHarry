@@ -8,3 +8,5 @@ let div = document.createElement("div");
 div.innerHTML = "I have been inserted by <b>Sagar Malasi | Doinorder</b>";
 div.setAttribute("class", "created");
 document.querySelector(".container").append(div);
+
+let cont = document.querySelector(".container")
