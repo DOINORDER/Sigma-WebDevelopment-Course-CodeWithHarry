@@ -10,3 +10,4 @@ div.setAttribute("class", "created");
 document.querySelector(".container").append(div);
 
 let cont = document.querySelector(".container")
+cont.insertAdjacentHTML("afterend, <b>I am under the water, please help me, it is too much raining here</b>")
