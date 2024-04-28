@@ -1,73 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>event bubbling</title>
     <style>
-        .container{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 20px;
-            background: cadetblue;
-            border: 2px solid rgba(102, 51, 153, 0.565);
-        }
-        .child{
-            border: 2px rgba(105, 90, 205, 0.595) solid;
-            padding: 34px;
-            margin: 34px;
-            background-color: aliceblue;
-            cursor: pointer;
-        }
-        .childContainer{
-            background: beige;
-            padding: 14px;
-            margin: 14px;
-            border: 2px rgba(153, 50, 204, 0.229) solid;
-        }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+        background: cadetblue;
+        border: 2px solid rgba(102, 51, 153, 0.565);
+      }
+      .child {
+        border: 2px rgba(105, 90, 205, 0.595) solid;
+        padding: 34px;
+        margin: 34px;
+        background-color: aliceblue;
+        cursor: pointer;
+      }
+      .childContainer {
+        background: beige;
+        padding: 14px;
+        margin: 14px;
+        border: 2px rgba(153, 50, 204, 0.229) solid;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <span class="childContainer">
-            <div class="child">
-                I am a child
-            </div>
-        </span>
+      <span class="childContainer">
+        <div class="child">I am a child</div>
+      </span>
     </div>
 
     <!-- to prevent form event bubbling one must need to stop the propogation -->
-<!-- we can simply stop the propogation by using the event key "e" and e.stopPropogation-->
-
-</body>
-<script>
+    <!-- we can simply stop the propogation by using the event key "e" and e.stopPropogation-->
+  </body>
+  <script>
     document.querySelector(".child").addEventListener("click", (e) => {
-        alert("Child was clicked")
-        e.stopPropagation
-    })
+      alert("Child was clicked");
+      e.stopPropagation;
+    });
     document.querySelector(".container").addEventListener("click", (e) => {
-        alert("Container was clicked")
-        e.stopPropagation
-    })
+      alert("Container was clicked");
+      e.stopPropagation;
+    });
     document.querySelector(".childContainer").addEventListener("click", (e) => {
-        alert("child container was clicked")
-        e.stopPropagation
-    })
+      alert("child container was clicked");
+      e.stopPropagation;
+    });
 
-    function getRandomColor(){
-    let val1 = Math.ceil(0 + Math.random() * 255);
-    let val2 = Math.ceil(0 + Math.random() * 255);
-    let val3 = Math.ceil(0 + Math.random() * 255);
-    return `rgb(${val1}, ${val2}, ${val3})`
-}
-   let a = setInterval(() => {
-document.querySelector(".container").style.backgroundColor = getRandomColor();
-    }, 1000);
-//    let a = setTimeout(() => {
-// document.querySelector(".container").style.backgroundColor = getRandomColor();
-//     }, 1000);
+    function getRandomColor() {
+      let val1 = Math.ceil(0 + Math.random() * 255);
+      let val2 = Math.ceil(0 + Math.random() * 255);
+      let val3 = Math.ceil(0 + Math.random() * 255);
+      return `rgb(${val1}, ${val2}, ${val3})`;
+    }
+    let a = setInterval(() => {
+      document.querySelector(".container").style.backgroundColor =
+        getRandomColor();
+    }, 100);
+    let b = setInterval(() => {
+      document.querySelector(".childContainer").style.backgroundColor =
+        getRandomColor();
+    }, 100);
+    let c = setInterval(() => {
+      document.querySelector(".child").style.backgroundColor = getRandomColor();
+    }, 100);
+    //    let a = setTimeout(() => {
+    // document.querySelector(".container").style.backgroundColor = getRandomColor();
+    //     }, 1000);
 
-    console.log(a)
-</script>
+    console.log(a, b, c);
+  </script>
 </html>
