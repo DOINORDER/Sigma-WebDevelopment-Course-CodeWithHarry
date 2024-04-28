@@ -38,7 +38,7 @@
     </div>
 
     <!-- to prevent form event bubbling one must need to stop the propogation -->
-
+<!-- we can simply stop the propogation by using the event key "e" and e.stopPropogation-->
 
 </body>
 <script>
@@ -54,5 +54,20 @@
         alert("child container was clicked")
         e.stopPropagation
     })
+
+    function getRandomColor(){
+    let val1 = Math.ceil(0 + Math.random() * 255);
+    let val2 = Math.ceil(0 + Math.random() * 255);
+    let val3 = Math.ceil(0 + Math.random() * 255);
+    return `rgb(${val1}, ${val2}, ${val3})`
+}
+   let a = setInterval(() => {
+document.querySelector(".container").style.backgroundColor = getRandomColor();
+    }, 1000);
+//    let a = setTimeout(() => {
+// document.querySelector(".container").style.backgroundColor = getRandomColor();
+//     }, 1000);
+
+    console.log(a)
 </script>
 </html>
