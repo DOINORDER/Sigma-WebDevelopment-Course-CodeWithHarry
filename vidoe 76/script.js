@@ -6,7 +6,6 @@
 //   });
 // }
 
-
 async function getData() {
   //Simulate getting data from a server
   let x = fetch("https://jsonplaceholder.typicode.com/todos/1");
